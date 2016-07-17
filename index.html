@@ -32,6 +32,18 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<!--Google Analytics-->
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-80897009-1', 'auto');
+			  ga('send', 'pageview');
+		</script>
+		<!--Done-->
 	</head>
 
 	<body>
@@ -52,7 +64,7 @@
 				<section>
 					<h2>Meet the Edison</h2>
 					<p>
-						
+
 The Edison is the powerful new computing module from Intel®. It’s tiny enough to embed into wearable projects, versatile enough to manage internet-of-things applications, and powerful enough to control robotics platforms.
 					</p>
 				</section>
@@ -72,7 +84,7 @@ The Edison is the powerful new computing module from Intel®. It’s tiny enough
 
 The Intel® Edison compute module is meant to be used with a breakout board and is typically bought together with a kit containing the compute module and a breakout board.
 <br>
-                        
+
                         1 Intel® Edison compute module<br>
 2 Arduino* expansion board<br>
 3 Assembly hardware<br>
@@ -115,12 +127,12 @@ The Intel® Edison compute module is meant to be used with a breakout board and 
 				</section>
 
 				<section>
-					
+
 						<h2>It’s ready to use</h2><br>
                     <p>Edison will show up as three different devices on your computer:<br>1-USB Mass Storage device <br>2-Intel Edison Virtual Com Port<br>3-Intel Edison USB RNDIS Device<br>
                     The removable storage device called “Edison” is the best indicator that it’s working.</p>
-                        
-					
+
+
 				</section>
 
 				<section>
@@ -185,7 +197,7 @@ The Intel® Edison compute module is meant to be used with a breakout board and 
                         <p> File > Examples > 01.Basics > Blink. And click the Upload icon.<br>
 
 After the compile, the code should quickly upload over to the Edison. Look for a “Transfer Complete” notification in the console window below.</p>
-                       
+
                     </section>
                     <section> <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/arduino_04.png">
                     </section>
@@ -207,19 +219,19 @@ After the compile, the code should quickly upload over to the Edison. Look for a
 					<p>
 						As always, the Arduino serial monitor is a handy debugging tool. Give some of the examples in the File > Examples > 04.Communication folder a try, or load up something simple like this:
 					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">void setup() 
+					<pre><code class="hljs" style="word-wrap: break-word;">void setup()
 {
   Serial.begin(9600);
 }
 
-void loop() 
+void loop()
 {
   if (Serial.available())
   {
     Serial.print("Decimal value: ");
     Serial.print(Serial.read());
     Serial.println();
-  }  
+  }
 }
 </code></pre>
 				</section>
@@ -241,7 +253,7 @@ If you haven’t already, plug your Edison into the base board and power your ba
 Make sure you have the FTDI drivers installed. If you need any help, check out our How to Install FTDI Drivers tutorial.</p>
 				</section>
                 <section>
-                   
+
                 <p> Opening Up a Serial Terminal Emulator <br>The next step is to open up your favorite terminal emulator software on your computer. If you don’t have a favorite, check out our Serial Terminal Basics tutorial.
 
 Make sure the new COM port for your base board is correctly set. You’ll also need to set the baud rate to 115200bps (8-N-1).</p>
