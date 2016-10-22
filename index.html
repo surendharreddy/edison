@@ -6,8 +6,8 @@
 
 		<title>Intel Edison - Getting Started</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Intel Edison Started Guide">
+		<meta name="author" content="Surendhar Reddy">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,18 +32,6 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-
-		<!--Google Analytics-->
-		<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			  ga('create', 'UA-80891326-1', 'auto');
-			  ga('send', 'pageview');
-   </script>
-		<!--Done-->
 	</head>
 
 	<body>
@@ -53,316 +41,318 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Intel Edison</h1>
-					<h3>Edison Getting Started Guide</h3>
+					<h3>Getting Started with Intel® Edison and Arduino Breakout Board</h3>
 					<p>
-						<small>Created by <a href="https://www.openhardwaredays.com">OpenHardwareDays</a> / <a href="http://twitter.com/openhardwareday">@openhardwareday</a></small>
-                        <p><a href="https://openhardwaredays.com/"><img src="https://openhardwaredays.com/images/logo.png"></a></p>
+						<small>By <a href="https://surendharreddy.github.io/">Surendhar Reddy</a> / <a href="https://twitter.com/imsurendhar">@imsurendhar</a></small> <br>
+
+						<small>for <a href="https://www.meetup.com/Hackster-hyd/">Hackster Hardware Meetup Hyderabad</a> </small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Meet the Edison</h2>
-					<p>
+					<h4>What is Intel Edison?</h4> <br>
 
-The Edison is the powerful new computing module from Intel®. It’s tiny enough to embed into wearable projects, versatile enough to manage internet-of-things applications, and powerful enough to control robotics platforms.
+					<p align="left">
+						
+The Intel Edison is a tiny computer-on-module offered by Intel as a development system for wearable devices and Internet of Things devices.	<br> <br>
+
+It was launched at CES in January 2014.
 					</p>
 				</section>
 
+				 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h4>Specification</h4>
-						<p>The Edison packs a host of features, including WiFi (802.11a/b/g/n), Bluetooth (4.0 and 2.1 EDR), UARTs, I2C, SPI, USB, and 40 GPIO. It’s driven by a 32-bit Intel® Atom™ Processor clocked at 500MHz, supported by 1GB of LPDDR3 RAM and 4GB eMMC flash memory. To top it off, it’s housed in a tiny, 35.5 x 25.0 x 3.9 mm module.</p>
-						<br>
+						<h4>Features</h4>
+							<p align="left">The Edison packs a host of features, including the two most widely-used connectivity options <br> <br>
+
+							<ul>
+							  <li>WiFi (802.11a/b/g/n)</li>
+							  <li>Bluetooth (4.0 and 2.1 EDR)</li>
+							  <li>40 pins dedicated to general-purpose I/O (GPIO).</li>
+							</ul>
+
+						    </p>
+						
+						<footer>&#x2193;</footer>
 					</section>
 					<section>
-						<h2>Requirement</h2>
-						<p>Host Operating System Requirements.<br>
-                        This guide is for the following 64-bit Windows* systems: Windows 7, 8, 8.1 and 10.<br>
-                        Physical Material Requirements<br>
+						<h4>Programming</h4>
+						<p align="left">
+						 The module is equipped with a Linux OS based on Yocto &#x2661;.
+					
+						 So you can compile the C, C++, Python, or JavaScript (Node.js) programming language.
+						</p> <br>
 
-The Intel® Edison compute module is meant to be used with a breakout board and is typically bought together with a kit containing the compute module and a breakout board.
-<br>
+						<p align="left">
+							To interact with sensors and actuators on Edison devices (or any supported device), Intel® provides the Libmraa. Libmraa allows you to read data from sensors and actuators in a standard way
+						</p>
 
-                        1 Intel® Edison compute module<br>
-2 Arduino* expansion board<br>
-3 Assembly hardware<br>
-                        4 Micro-B USB to Standard-B USB cables (x 2)<br>
-5 Direct current (DC) power supply<br></p>
+
+						<footer>&#x2193;</footer>
+						
 					</section>
 					<section>
-						<h2>Download Drivers and Arduino</h2>
-						<p>Download Arduino for Edison
-                             <a href="https://communities.intel.com/docs/DOC-23242">Download Here</a></p>
-                        <p>Download and Install the FTDI Drivers</p>
-						<a href="http://www.ftdichip.com/Drivers/VCP.htm">Download Here
-						</a>
-                        <p>Download and Install the Edison Drivers (Windows Only)
-                        <a href="https://communities.intel.com/docs/DOC-23242">Download Here</a></p>
+						<h4>Requirements?</h4>
+
+						<p align="left">
+							Ofcourse, an Intel Edison kit and a computer (which runs either of Windows 64-bit, Windows 32-bit, OSX, Linux) ready for Edison development. 
+						</p>
+
+						<p align="left">
+							A plethora of links to get your computer ready for Edison development are <a href="https://learn.sparkfun.com/tutorials/edison-getting-started-guide#download-drivers-and-arduino" target="_blank"> here</a>
+						</p>
+
+						<footer>&#x2192;</footer>
+
 					</section>
 				</section>
 
 				<section>
-					<h2>Plugging In</h2>
 					<p>
-						<img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/plug_edison.jpg" height="250px" width="350px"><br>
-					Let’s start by plugging the Edison into your base board, whatever that may be. Keep in mind that the Edison’s Hirose connectors are very delicate. When plugging your Edison into a base board, take care to push straight down, applying even pressure to the connector and the left corner of the Edison.
+						<img src="https://i.ytimg.com/vi/0gHHBy_mlr0/maxresdefault.jpg" height="100%" width="100%">
+					</p>
+
+					<small> Open the box! </small>
+				</section>
+
+				<section>
+					<h4>What's in the BOX?</h4>
+					<p>
+
+					<img src="https://software.intel.com/sites/default/files/did_feeds_images/cd3fb0c6-25c2-468f-974e-46368a26db64/cd3fb0c6-25c2-468f-974e-46368a26db64-imageId=1c4f1916-4cc8-408f-90c7-daf8243bec15.jpg"> <br>
+
+					Intel® Edison compute module to the Arduino expansion board
+						
                     </p>
 				</section>
 
 				<section>
-					<h2>Connecting and Powering via USB</h2>
-					<p>
-						Once the Edison is cleanly seated into your base board, wire up the USB port(s) to your computer. If your base board has two USB ports, it’s recommended that you connect both up to your computer – one port provides power and direct USB access, while the other connects to the Edison’s console.
-                        If you’re using Intel’s Arduino Expansion Board or the Mini Breakout, make sure you have at least connected USB to the Edison’s USB OTG port. That is the only port that can power the Edison.
-                        </p>
-				</section>
-
-				<section>
-					<h2>USB Connections</h2>
-					<p>
-						<img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/otg-ports.png" height="450" width="450">
-					</p>
-				</section>
-
-				<section>
-
-						<h2>It’s ready to use</h2><br>
-                    <p>Edison will show up as three different devices on your computer:<br>1-USB Mass Storage device <br>2-Intel Edison Virtual Com Port<br>3-Intel Edison USB RNDIS Device<br>
-                    The removable storage device called “Edison” is the best indicator that it’s working.</p>
-
-
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>This is a great sign!</h2>
-						<p>It means the Edison has</p>
-						<p class="fragment">booted up</p>
-						<p><span class="fragment">enumerated over USB</span> <br><span class="fragment">and is ready to be programmed</span> <span class="fragment"></span></p>
-					</section>
 					<section>
-						<h2>Windows Users</h2>
-						<p>Windows users plugging their Edison in for the first time may have to wait an extra minute or so while drivers are set up. Once that’s complete, you should be notified with a handy window like this, which also passes along important information about the Edison’s COM port assignment.</p>
-                        <img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/0/1/driver_04.png" height="150">
-                        <p>Don’t forget the COM port, or, if you didn’t get the notification, check for the Edison’s COM port assignment in your device manager.</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Programming the Edison in Arduino</h2>
-					<p>
-						With a built-in C-compiler, Python, Node.js, and more, the Edison is capable of amazing things<br>
-                        we really recommend exploring the Edison’s full capabilities by writing your applications in<br>
-						<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiV3IHm5-PNAhUISY8KHfvbAnAQFggeMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FC_(programming_language)&usg=AFQjCNGoxpV3U4ej5iYHO59RcFTCEkcCUA&sig2=T3DvyMi4FtojdHOf_KmxIg">C</a> -
-						<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiQzNf55-PNAhXDL48KHcUpD2MQFggcMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FC%252B%252B&usg=AFQjCNEaoQmFUKvMiIs40fCoLy3eQQqVCA&sig2=Y4jurfXq3Dgy-381tiNaNw&bvm=bv.126130881,d.c2I">C++</a> -
-						<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&sqi=2&ved=0ahUKEwjTiaeA6OPNAhXMto8KHQcfBL8QFggcMAA&url=https%3A%2F%2Fwww.python.org%2F&usg=AFQjCNHtL9dpRTydwE89-fkyoeBWw_Ih6g&sig2=TCxCud54Xp42ToCWvO6unw&bvm=bv.126130881,d.c2I">Python</a> -
-						<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjF95CL6OPNAhUBNI8KHSsuDaAQFggcMAA&url=https%3A%2F%2Fnodejs.org%2F&usg=AFQjCNHwipVu3o5mtW8Tqz3ihvWKAskslQ&sig2=Yb3wRqtacHdfFNm6VczXKA&bvm=bv.126130881,d.c2I">Node.js</a><br>
-						anything that takes full advantage
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>using Arduino to program the Edison is a great way to start developing on the mini-computer</h2>
-					<p>Now <br>
-                        we’ll examine how to program the Edison in Arduino<br>
-                        cover some common troubleshooting<br>
-                        point out some useful examples to help get you started.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Note 1</h2>
+						<h4>Edison</h4>
 						<p>
-							This section requires a base block with a USB OTG port – that means you won’t be able to use the Arduino IDE with the Console Block. If that’s all you have, skip ahead to the <a href="https://learn.sparkfun.com/tutorials/edison-getting-started-guide#setting-up-the-console">Setting Up the Console section.</a>
+							So this is the tiny computer we were talking about
+
+							<img src="http://images.anandtech.com/doci/8511/Edison_678x452.jpg">
 						</p>
+
+						<footer>&#x2193;</footer>
+
+				    </section>
+				    <section>
+						<h4>Block Diagram</h4>
+						<p>
+							<img src="https://software.intel.com/sites/default/files/managed/ab/a6/edison-block-diagram.jpg" height="400px" width="700px"><br>
+	                    </p>
+
+	                    <footer>&#x2192;</footer>
+
+				    </section>
+				</section>
+
+				<section>				
+					<h4>Let's get our hands dirty. </h4>
+					<p>
+						<img src="http://i2.kym-cdn.com/photos/images/original/000/430/609/3d9.png">
+					</p>                         
+				</section>
+
+				
+
+				<section>				
+					<h4>First Thing!</h4>
+					<img src="https://software.intel.com/sites/default/files/did_feeds_images/cd3fb0c6-25c2-468f-974e-46368a26db64/cd3fb0c6-25c2-468f-974e-46368a26db64-imageId=deccf39d-6df7-484a-ac79-e41e25703d76.jpg">  
+
+					<p align="left"> Press down on the Intel® Edison compute module just below the words “What will you make?” until you feel a snap. </p>                       
+				</section>
+
+				<section>
+					<p align="center"> To many slots? </p>
+
+					<img src="http://www.pastoralin.com/wp-content/uploads/2014/06/Jackie-Chan-Meme-Template.jpg">
+				</section>
+
+				<section>
+					<h4>Understanding Edison</h4>
+					<div style="width: 100%; overflow: hidden;">
+					    <div style="width: 500px; float: left;"> 
+					    	<img src="https://software.intel.com/sites/default/files/did_feeds_images/cd3fb0c6-25c2-468f-974e-46368a26db64/cd3fb0c6-25c2-468f-974e-46368a26db64-imageId=41e970e5-58cd-4738-804c-70f3dbbce927.jpg">
+					    </div>
+					    <div style="margin-left: 620px;"> 
+					    	<ol>
+								<li>USB device mode set</li>
+								<li>Device mode cable connected</li>
+								<li>UART/serial cable connected</li>
+								<li>External power supply connected </li>
+							</ol>
+					    </div>
+				    </div>
+				</section>
+				<section>
+						<h4>LED Indicator</h4>
+						<img src="https://software.intel.com/sites/default/files/did_feeds_images/cd3fb0c6-25c2-468f-974e-46368a26db64/cd3fb0c6-25c2-468f-974e-46368a26db64-imageId=01e762f1-7f33-433a-9adc-ff785858e9a5.jpg">
+						<p> Confirms the Edison is switched on/off</p>
+				</section>
+				<section>
+					<h4>Setup Edison for your Host operating system</h4>
+					<p>
+						Instructions are provided in the following links
+						<ul>
+							<li><a href="https://software.intel.com/en-us/get-started-edison-osx">Mac OS X</a></li>
+							<li><a href="https://software.intel.com/en-us/get-started-edison-windows">Windows</a></li>
+							<li><a href="https://software.intel.com/en-us/get-started-edison-linux">Linux</a></li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h4>First Program</h4>
+						<p>
+							Open up the Edison-specific Arduino software. This software is nearly indistinguishable from other Arduino builds. 
+						</p>
+
+						<footer>&#x2193;</footer>
 					</section>
 					<section>
-						<h2>Note 2</h2>
-						if you’re using the Arduino Expansion Board, make sure the switch labeled “SW1” (between the micro-B USB port and the larger host USB port) is slid in the direction of the nearby micro-B port. That will switch that port into device mode.
+						<h4>Blink LED</h4>
+
+						<p>
+							Go up to the File > Examples > Basics > menu and select blink	
+						</p>
+						 
+
+						<img src="https://www.arduino.cc/en/uploads/Guide/101_LoadBlink.png">
+
+						<footer>&#x2193;</footer>
+						
 					</section>
 					<section>
-						<h2>Uploading Blink</h2>
-						<p>By now you should have the Edison powered and plugged into your computer (connecting the Edison’s OTG USB port to your computer), drivers set up, and Arduino for Edison software installed. If not, refer back to the previous sections of this tutorial.<br>Open up the Edison-specific Arduino software. This software is nearly indistinguishable from other Arduino builds. To make sure you’re using the right version, go up to the Tools > Board menu and select Intel® Edison</p>
-					</section>
-					<section>
+						<h4>Select Board</h4>
+						
+
+						<p>Go up to the Tools > Board menu and select Intel® Edison</p>
+
 						<img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/0/1/arduino_01.png" height="200" width="600">
-                        <p>Next, select your serial port by going to Tools > Serial Port and select the COM port number that matches your new Edison.<br>
-                        <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/arduino_03.png" height="200" width="600"></p>
+
+						<footer>&#x2193;</footer>
+						
 					</section>
-                    <section>
-                        <h2>Finally Blink</h2>
-                        <p> File > Examples > 01.Basics > Blink. And click the Upload icon.<br>
+					<section>
+						<h4>Uploading blink</h4>
 
-After the compile, the code should quickly upload over to the Edison. Look for a “Transfer Complete” notification in the console window below.</p>
+						<p>A ton of options before you deploy code onto board.</p>
 
-                    </section>
-                    <section> <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/arduino_04.png">
-                    </section>
-                    <section><p>Don’t fret if you get an upload error! We’ve gotten a lot of them too. For most problems, there’s usually no-better a fix than the old restart. This interface can be finicky, if you get an upload error try unplugging the Edison then plugging it back in and trying again. If that doesn’t help, consider checking out Intel’s Edison forum.</p></section>
+                        <img src="https://cdn.sparkfun.com/assets/d/4/e/3/c/51df245ece395f0728000001.png">
+
+                        <footer>&#x2193;</footer>
+
+                        
+                        
+					</section>
 					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
 						<h2></h2>
+
+						<footer>&#x2192;</footer>
 					</section>
 				</section>
 
 				<section>
-					<h2>Handy Examples</h2>
 					<p>
-						We’ve loaded up the blink example, but on many boards the Edison doesn’t even have an LED to blink. Here are some other handy examples that prove the Edison is working, and provide some insight into how the Edison’s Arduino interface works.
+						<img src="https://cdn.meme.am/instances/400x/57933527.jpg">
 					</p>
 				</section>
 
 				<section>
-					<h2>Serial</h2>
+					<h4>Get access to Edison shell</h4>
+
+					<i>Get into shell. It's brilliant in there.</i> <br>
+
+					<b> --------- </b>
+
 					<p>
-						As always, the Arduino serial monitor is a handy debugging tool. Give some of the examples in the File > Examples > 04.Communication folder a try, or load up something simple like this:
+						Watch the following videos to get access to Edison shell. 
+						<ul>
+							<li><a href="https://software.intel.com/en-us/videos/shell-access-mac"> Mac OS X and Linux</a></li>
+							<li><a href="https://software.intel.com/en-us/videos/shell-access-windows">Windows</a></li>
+						</ul>
 					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">void setup()
-{
-  Serial.begin(9600);
-}
-
-void loop()
-{
-  if (Serial.available())
-  {
-    Serial.print("Decimal value: ");
-    Serial.print(Serial.read());
-    Serial.println();
-  }
-}
-</code></pre>
 				</section>
 
-				<section>
-					<h2>WiFi</h2>
-
-<p>WiFi is one of the most important features embedded into the Edison, and it’s supported in the Arduino IDE by an updated WiFi library.
-
-Try loading up any of the examples in the File > Examples > WiFi folder – the “WiFiWebClient” example is a good one. You’ll probably have to update the SSID and passkey before uploading.</p>
-				</section>
-
-				<section>
-					<h2>Connecting to the FTDI Port</h2>
-                    <p>The Arduino Expansion Board, Edison Mini Breakout, and the SparkFun Console Blocks all route the console UART out through an FTDI chip, which converts serial to USB.
-
-If you haven’t already, plug your Edison into the base board and power your base board (in most cases by hooking up the USB OTG port). Then connect the base board’s debug port to your computer via a USB cable. Each of these boards have two micro-B USB ports, make sure you plug into the correct one!
-
-Make sure you have the FTDI drivers installed. If you need any help, check out our How to Install FTDI Drivers tutorial.</p>
-				</section>
                 <section>
+                	<section>
+	                	<h4>Configure Edison</h4>
 
-                <p> Opening Up a Serial Terminal Emulator <br>The next step is to open up your favorite terminal emulator software on your computer. If you don’t have a favorite, check out our Serial Terminal Basics tutorial.
+	                	<p>
+	                	 Configure your Edison with the help of following links.
+	                		<ul>
+	                			<li><a href="https://software.intel.com/en-us/connecting-your-intel-edison-board-using-wifi"> Configure WiFi</a></li>
+	                			<li><a href="https://software.intel.com/en-us/articles/intel-edison-board-getting-started-with-bluetooth"> Configure Bluetooth</a></li>
+	                		</ul>
+	                	</p>
 
-Make sure the new COM port for your base board is correctly set. You’ll also need to set the baud rate to 115200bps (8-N-1).</p>
-                    <img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/0/1/console-settings.PNG">
-                </section>
-                <section>After you’ve opened up the serial port, try hitting enter a couple times. If all goes well, the Edison should respond with a login prompt.
-
-The default Edison login is root. There is no password…yet. You can run passwd, if you want to set one now, but it will be wiped out when/if you update the firmware image.</section>
-                <section>
-                <h2> Updating the Firmware Image</h2>
-                <p>Most Edison’s ship with an older version of the firmware. Updating to the latest version of the firmware equips the Edison with a whole host of new utilities, including a WiFi configuration tool and a fix to that annoying 5-second sleep in the terminal.
-
-This step requires access to both the Edison’s OTG USB port and the console. That means you’ll need two USB cables, connected to two ports on your computer (or a hub).</p>
-                </section>
-                <section>
-                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/dual_usb.jpg">
-                    <p>The OTG port will give us access to the Edison’s USB mass storage device.
-
-You can either update firmware with the Intel Installer or the manual way.</p>
+	                	<footer>&#x2193;</footer>
                      </section>
-                <section>
-                <h2>Using the Intel Installer</h2>
-                <p>
-                    ntel is continuing to improve the Edison support. Now, there is an Installer to make updating your firmware a breeze. There is an option to install the Arduino IDE too. Head over to the Edison Getting Started Guide on the Intel Developer Zone site. If you already assembled your board, jump to “Step 2: Choose your Operating System”. Pick your operating system and download the Installer.</p></section>
-                <section>
-                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/Screen_Shot_2015-07-07_at_3.05.57_PM.png">
-                    <p>Open up the Installer. You will be asked to install as administrator. Follow through the rest of the steps and you are good to go! Next step will be to set up a serial terminal and connect to WiFi.</p>
+                     <section>
+		                <h4>Configure and setup WiFi</h4>
+
+		                	 <span>Do</span>
+
+		                	<pre><code class="hljs" style="word-wrap: break-word;">
+		     configure_edison --setup
+							</code></pre>
+
+							<p> To configure your edison </p> <br>
+
+							           	 <span>Do</span>
+
+		                	<pre><code class="hljs" style="word-wrap: break-word;">
+		     configure_edison --wifi
+							</code></pre>
+
+							<p> To configure your wifi </p>
+		                   
+
+		                    <footer>&#x2193;</footer>
+	                 </section> 
+                     <section>First give your Edison a unique name:
+		                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_01.png"> 
+
+		                <footer>&#x2193;</footer>
+		             </section>
+		             <section>
+						Then, if you so desire, assign a password to your root user:
+	                    <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_02.png">
+
+	                    <footer>&#x2193;</footer>
+					</section>
+					<section>
+						<h4>YAY!</h4>
+	                    <img src="https://pbs.twimg.com/media/B_1T1_YXAAAi_IH.png">
+
+	                    <footer>&#x2192;</footer>
+					</section>
                 </section>
 
                 <section>
-                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/Screen_Shot_2015-07-07_at_3.14.39_PM.png">
+                	<h4>What will you make?</h4>
+                	<p>
+                		Find a ton of examples <a href="https://www.hackster.io/intel/products/intel-edison"> here</a>
+                	</p>
+
+
+                	<img src="https://www.hackster.io/assets/hackster_logo_blue-03ea84833aa0dcf8f33be76d265d37340c7cd1ceb77a74429deb631ef0261e8f.png">
+
                 </section>
-                <section>
-                <p>Manually Updating the Firmware
 
-We’ll begin by downloading the latest and greatest version of the Edison firmware, grab it from the <a href="https://communities.intel.com/docs/DOC-23242">Edison Software Downloads page.</a>
-                    <p><a href="https://communities.intel.com/docs/DOC-23242">Download the “Edison Yocto complete image”</a><br> it’s about 100 MB. Then unzip the archive, and keep the extracted contents up somewhere handy.</p></section>
-                <section>
-                <h2>Out With the Old</h2>
-                    <p>Before you load the new firmware onto the Edison, make sure all of the old stuff is out of the way. Use your terminal (Mac) or CMD (Windows), and navigate to the top level of your Edison’s mass storage drive.
-
-On Mac, type cd /Volumes/Edison. On Windows type E: – replacing “E” with the drive letter of your Edison.
-
-Once inside the folder, type<pre><code>rm -rf *</code></pre>  and <pre><code>rm -rf \.*</code></pre> to remove all of the files – hidden or not – from the drive.
+                <section data-background="http://i.imgur.com/GCnAm2x.jpg" style="height:100%; display:block;">
+                	
                 </section>
-                <section>In With the New
-                    <p>Next, open up the Edison mass storage drive in your file explorer. Then move everything from within the extracted ZIP folder into the drive. It should look a little something like this:</p>
-                    <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/flash_01.png" height="400">
-                </section>
-                <section>
-                    <h2>Issuing the Update Command</h2>
-                    <p>Finally, begin the update by opening your Edison’s console and entering this command: reboot ota.
+ 				
 
-The Edison will shut down, then, as it begins to reboot, it will notice there’s a flash update in the mass storage device and begin to install the update. The update will take a minute-or-so to install, and the Edison will reboot one last time.
-
-When the Edison comes back up, log in as root and take comfort in knowing your Edison is running the latest and greatest version of the Edison Yocto image.</p>
-                </section>
-                <section>
-                <h2>Connecting to WiFi</h2>
-                    <p>The latest version of the Edison firmware includes a handy utility to set up WiFi – configure_edison --setup. Type that into your Edison’s console, then follow the in-terminal directions as you can edit the Edison’s name and WiFi settings.</p>
-                </section>
-                <section>First give your Edison a unique name:
-                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_01.png"> </section>
-				<section>
-					Then, if you so desire, assign a password to your root user:
-                    <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_02.png">
-				</section>
-
-				<section>
-					<p>Finally we get to the reason we’re here. Type ‘Y’ to jump into the WiFi setup utility. The Edison will scan for nearby wireless networks, after a few seconds it will list the results.</p>
-                    <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_03.png">
-				</section>
-
-                <section>
-                <p>Type a number to pick an SSID, then enter your passkey and wait for it to (try to) connect.</p>
-                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_04b.png"></section>
-                <section>
-                <p>The last line of the configure utility will prompt you to open your browser and point to the Edison’s local IP.</p>
-                <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/config_05.png"></section>
-                <section><p>You won’t glean a lot of information from this page, but it will provide some assurance that your Edison is on the WiFi network. Plus, just think of all the fun you can have with a tiny little credit card-sized computer that can serve up web pages like this!
-
-You can use the console for other network-related stuff now, too. Try pinging your favorite web site with a command like ping sparkfun.com -c 4. Or check your network status with a command like ifconfig or ifconfig wlan0.
-
-Now that your Edison’s on the WiFi network, you can do all sorts of cool stuff. How about SSH-ing into it, so you can remotely interact with little computer’s file structure?</p></section>
-                <section>SSH-ing into the Edison
-                <p>If you’ve gotten this far, you may begin to realize that interacting with your Edison via the command line may get a bit tiresome. Luckily, now that you have WiFi set up, you can (figuratively literally) cut the cord and control your Edison through the network using <a href="http://en.wikipedia.org/wiki/Secure_Shell">SSH</a> (Secure Shell). You can even download and upload files to the Edison over<a href="http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol" >SFTP</a> (SSH file transfer protocol).
-
-In order to SSH into your Edison, you’ll probably another piece of software installed on your computer. We like<a href="http://winscp.net/">WinSCP</a>  for Windows machines and<a href="https://cyberduck.io/">Cyberduck</a>  on the Mac.</p></section>
-                <section><h4>Using WinSCP (Windows)</h4>
-                <p>When you open WinSCP, it’ll ask you where and how you’d like to log in. Make sure “File Protocol” is set to “SFTP”. Then, in the “Host name” text box, type the IP address of your Edison. For the “User name” and “Password” boxes, type “root” and the password you set (or leave it blank if you skipped that part).</p>
-                </section>
-                <section>
-                <img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/0/1/winSCP-example.png"></section>
-                <section><p>(Personal frustration note: if you’re having trouble SSH-ing into your Edison, you may need to turn off your Windows Firewall. Hopefully you don’t have to ram your head against that wall for too long. Active VPN’s may also get in the way!)
-
-Once you click “Login”, the program will attempt to remotely log in to your Edison. If it’s successful, you’ll be greeted with a file browser. These are the actual files living on your Edison! You can use this browser to upload or download files. This is a great utility if you’re developing programs to be run on the Edison, your only other option is monochrome vi in the terminal (which would be pretty hardcore).
-
-WinSCP also includes a utility for interacting with the remote host via a terminal. Go to “Commands” > “Open Terminal” and you’ll be right back to the console.</p></section>
-                <section>
-                <h2>Using Cyberduck (Mac)</h2>
-                <p>
-                    It’ll be the same idea in Cyberduck. Type your Edison’s IP address into the “Server” box. Then type “root” as the “Username” and your password if you set one. Then hit “Connect.”</p></section>
-                <section>
-                    <img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/0/1/cyberduck-example.png">
-                    </section>
-                <section><p>Like WinSCP, Cyberduck will present you with a file explorer. This will allow for an easy, graphical interace for managing your Edison’s files.
-
-If you’d like to interact with the console remotely, open up your Mac’s terminal application. Then type ssh root@10.0.0.20, making sure to sub in your Edison’s IP address. When/if prompted for a password, type that in, then you’re back to the Edison console.</p></section>
-				<section>
+                
+                
+     			<section>
                     <h2>Buy</h2>
 					<ul>
 						<li><a href="http://amzn.to/29pUq2H">Intel Edison Kit For Arduino</a></li>
@@ -372,9 +362,18 @@ If you’d like to interact with the console remotely, open up your Mac’s term
 					</ul>
                 </section>
 
+                <section style="text-align: left;">
+					<h1>Questions?</h1>
+
+					<p>Post them <a href="/feedback">here.</a></p>
+				</section>
+
 				<section style="text-align: left;">
 					<h1>THE END</h1>
+					<p>Please give the feedback<a href="/feedback"> here.</a></p>
 				</section>
+
+				
 
 			</div>
 
